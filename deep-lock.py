@@ -26,10 +26,10 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 model.fit(X, Y, epochs=150, batch_size=10)
 
-print("Predition for zero:")
+print("Prediction for zero:")
 predict_zero = numpy.zeros(shape=(1, 1))
 print(model.predict_classes(predict_zero))
 
-print("Predition for one:")
+print("Prediction for one:")
 predict_one = numpy.ones(shape=(1, 1))
 print(model.predict_classes(predict_one))
